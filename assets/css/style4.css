@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.board {
+    display: none;
+}
+
+/* nav {
+    position: fixed;
+} */
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+nav li>a {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+nav li>a:hover {
+    background-color: rgb(33, 32, 32);
+    color: white;
+    cursor: alias;
+}
+
+nav>button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(33, 32, 32);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media (max-width:1200px) {
+    nav>ul {
+        display: none;
+    }
+
+    nav>.board {
+        display: block;
+    }
+}
+
+
+.sertifikat {
+    background-color: rgba(33, 32, 32, 0.304);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sertifikat > h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.sertifikat > p {
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+form > input {
+    background-color: black;
+    color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gold;
+}
+
+
+form > button {
+    padding: 5px;
+    background-color: gold;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+
+.text-footer {
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.text-footer > button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: black;
+    color: gray;
+    margin: 10px;
+}
+
+
+.text-footer > button:hover {
+    background-color: rgba(128, 128, 128, 0.167);
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(61, 61, 61, 0.137);
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.right-footer {
+    cursor: pointer;
+}
