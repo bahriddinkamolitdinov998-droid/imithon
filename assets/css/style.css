@@ -50,6 +50,10 @@ nav li>a:hover {
     cursor: alias;
 }
 
+.board {
+    display: none;
+}
+
 nav>button {
     padding: 10px 20px;
     border-radius: 10px;
@@ -59,8 +63,19 @@ nav>button {
     cursor: pointer;
 }
 
+@media (max-width:1200px) {
+    nav>ul {
+        display: none;
+    }
+
+    nav>.board {
+        display: block;
+    }
+}
+
+
 .banner {
-    height: 500px;
+    height: 50%;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -255,6 +270,68 @@ form>button:hover {
     border-radius: 50%;
 }
 
+@media (max-width:1250px) {
+    .results-boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+    }
+
+
+    .linear {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .linear > .text- {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 40px;
+    } */
+
+    .left-box3>button:nth-child(2) {
+        display: none;
+    }
+
+    .left-box3>button:nth-child(3) {
+        display: none;
+    }
+
+    .left-box3>button:nth-child(1) {
+        width: 100%;
+    }
+
+
+    input:nth-child(3) {
+        padding: 15px 20px;
+        outline: none;
+        background-color: black;
+        color: gray;
+        width: 100%;
+        border: none;
+        border: 10px;
+        border-radius: 10px;
+    }
+
+
+
+    form>button {
+        width: 100%;
+    }
+
+
+}
+
 .chek-box>input {
     width: 24px;
     height: 24px;
@@ -294,6 +371,7 @@ form>button:hover {
    display: flex;
    align-items: center;
    justify-content: space-around;
+   flex-wrap: wrap;
 }
 
 .catalog-left> .catalog:nth-child(2){
@@ -321,6 +399,21 @@ form>button:hover {
     height: 200px;
     border-radius: 10px;
 } 
+
+@media (max-width:1250px) {
+    .cataloggs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .catalogg {
+        margin: auto;
+    }
+}
+
 .text-2 > p {
     font-size: 25px;
     font-weight: 800;
@@ -417,6 +510,7 @@ color: gold;
 .videoss {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .text-5 {
@@ -433,9 +527,12 @@ color: gold;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .fiction {
+    display: flex;
+    flex-wrap: wrap;
     padding: 30px;
     width: 30%;
     height: 100%;
@@ -459,6 +556,7 @@ color: gold;
 .videos-1 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -570,7 +668,24 @@ color: gold;
     margin-bottom: 50px;
 }
 
+@media (max-width:1250px) {
+    .boxes2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .left-box2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
+
+
+    .text-9 {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 
