@@ -588,6 +588,9 @@ color: gold;
     color: gray;
 }
 
+.boxes2 {
+    padding: 0px;
+}
 
 .box2 {
     background-color: rgb(33, 32, 32);
@@ -595,16 +598,96 @@ color: gold;
     padding: 20px;
     border-radius: 15px;
     margin-top: 20px;
+    margin: auto;
+}
+
+@media (max-width:1250px) {
+    .box2 {
+        width: 100%;
+    }
+    .buttons  {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        padding: 0px;
+    }
+    
+    .cataloggs>.catalogg:nth-child(3)::before{
+content: "";
+}
+
+.cataloggs>.catalogg:nth-child(4)::before{
+content: "";
+color: gold;
 }
 
 
+
+
+.cataloggs>.catalogg:nth-child(2)::before{
+content: "";
+color: gold;
+}
+    
+.catalogg::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    content: "⚡";
+    width: 40px;
+    height: 40px;
+    background: rgb(2, 2, 2);
+    right: 10px;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+
+
+.catalog-left > .catalog {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.text-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-1 > button{
+    font-size: 18px;
+    background-color: black;
+    color: white;
+}
+
+.result-right {
+    width: 100%;
+}
+
+.fictions .fiction:nth-child(1){
+    display: none;
+}
+
+.fictions .fiction:nth-child(3) {
+    display: noen;
+}
+
+.fiction:nth-child(2) {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+}
 
 .box2 > hr {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.box2 > button {
+.box2 > .buttons >  button {
     background-color: black;
     color: gray;
     border: none;
@@ -614,7 +697,7 @@ color: gold;
     font-weight: 800;
 }
 
-.box2 > button:active {
+.box2 > .buttons> button:active {
     background-color: white;
     color: black;
 }
@@ -668,6 +751,14 @@ color: gold;
     margin-bottom: 50px;
 }
 
+.all > h3 {
+    color: gold;
+}
+
+.all {
+    width: 100%;
+}
+
 @media (max-width:1250px) {
     .boxes2 {
         display: flex;
@@ -679,6 +770,22 @@ color: gold;
         justify-content: center;
     }
 
+    .result-right2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    
+
+.result-right2 > h3 {
+    font-size: 5px;
+}
+
+    .result-right2 > .all > p {
+        display: none;
+    }
 
 
     .text-9 {
